@@ -90,8 +90,8 @@ $(document).ready(function(){
             data = await $.ajax({
                 url:'https://api.github.com/users/'+username,
                 data:{
-                    client_id:'56c7061aaead7f69eeca',
-                    client_secret:'fad1401416789dca7ea2741d03099f7aa15f4940'
+                    client_id:'',
+                    client_secret:''
                 }
             });
 
@@ -109,8 +109,8 @@ $(document).ready(function(){
             data = await $.ajax({
                 url:'https://api.github.com/users/'+username+'/repos',
                 data:{
-                    client_id:'56c7061aaead7f69eeca',
-                    client_secret:'fad1401416789dca7ea2741d03099f7aa15f4940',
+                    client_id:'',
+                    client_secret:'',
                     sort: 'created: asc',
                     per_page: 5
                 }
